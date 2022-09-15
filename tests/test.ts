@@ -3,7 +3,7 @@ import { test, expect, } from '@playwright/test';
 test('homepage has a login button that can be clicked', async ({ page }) => {
   //locators needed for the test
   const loginButton = page.locator('text=Log in');
-  
+
   await page.goto('https://www.hudl.com/');
   await expect(loginButton).toContainText('Log in');
   await (loginButton).click();
@@ -69,3 +69,6 @@ test('need help buttons works', async ({ page }) => {
   await (backButton).click();
   await expect(page).toHaveURL(/login/);
 });
+
+
+//fom here i would add in a test for reset pasword and a log in with organination
