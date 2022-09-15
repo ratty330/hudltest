@@ -23,8 +23,8 @@ test('Users with a username and password can use the login system to login', asy
   await expect(loginButton).toContainText('Log in');
   await (loginButton).click();
   await expect(page).toHaveURL(/login/);
-  await (emailField).fill('****');
-  await (passwordField).fill('*****')
+  await (emailField).fill('***');
+  await (passwordField).fill('***')
   await (submitLogin).click();
   await expect(page).toHaveURL(/home/);
 });
@@ -48,10 +48,10 @@ test('login system needs username and password', async ({ page }) => {
   await expect(page).toHaveURL(/login/);
   await (submitLogin).click();
   await expect(errorText).toContainText('We didn\'t recognize that email and/or password.Need help?')
-  await (emailField).fill('hoggrobert85@gmail.com');
+  await (emailField).fill('******');
   await (submitLogin).click();
   await expect(errorText).toContainText('We didn\'t recognize that email and/or password.Need help?')
-  await (passwordField).fill('.Raven123')
+  await (passwordField).fill('******')
   await (submitLogin).click();
   await expect(page).toHaveURL(/home/);
 });
