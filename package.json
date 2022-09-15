@@ -1,0 +1,21 @@
+{
+  "name": "hudltest",
+  "version": "1.0.0",
+  "description": "a test project for hudl",
+  "main": "index.js",
+  "scripts": {},
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ratty330/hudltest.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/ratty330/hudltest/issues"
+  },
+  "homepage": "https://github.com/ratty330/hudltest#readme",
+  "devDependencies": {
+    "@playwright/test": "^1.25.2"
+  }
+}
