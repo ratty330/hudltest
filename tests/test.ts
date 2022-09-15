@@ -48,10 +48,10 @@ test('login system needs username and password', async ({ page }) => {
   await expect(page).toHaveURL(/login/);
   await (submitLogin).click();
   await expect(errorText).toContainText('We didn\'t recognize that email and/or password.Need help?')
-  await (emailField).fill('*****');
+  await (emailField).fill('******');
   await (submitLogin).click();
   await expect(errorText).toContainText('We didn\'t recognize that email and/or password.Need help?')
-  await (passwordField).fill('*****')
+  await (passwordField).fill('******')
   await (submitLogin).click();
   await expect(page).toHaveURL(/home/);
 });
